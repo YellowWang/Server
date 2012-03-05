@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "correspondence_client", "correspondence\correspondence.vcproj", "{D4E4AD65-25A9-4D9D-9AD0-10577FF6CC31}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tcp_server1", "tcp_server1\tcp_server1.vcproj", "{F0D50679-2763-449B-9D03-C4ADCA5CA085}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4E4AD65-25A9-4D9D-9AD0-10577FF6CC31}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D4E4AD65-25A9-4D9D-9AD0-10577FF6CC31}.Debug|Win32.Build.0 = Debug|Win32
+		{D4E4AD65-25A9-4D9D-9AD0-10577FF6CC31}.Release|Win32.ActiveCfg = Release|Win32
+		{D4E4AD65-25A9-4D9D-9AD0-10577FF6CC31}.Release|Win32.Build.0 = Release|Win32
+		{F0D50679-2763-449B-9D03-C4ADCA5CA085}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F0D50679-2763-449B-9D03-C4ADCA5CA085}.Debug|Win32.Build.0 = Debug|Win32
+		{F0D50679-2763-449B-9D03-C4ADCA5CA085}.Release|Win32.ActiveCfg = Release|Win32
+		{F0D50679-2763-449B-9D03-C4ADCA5CA085}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

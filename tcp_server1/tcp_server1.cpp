@@ -22,10 +22,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	WSADATA wsa;
 	if(WSAStartup(MAKEWORD(2,2),&wsa)!=0){ 
 
-		printf("Ì×½Ó×Ö³õÊ¼»¯Ê§°Ü!");
+		printf("ï¿½×½ï¿½ï¿½Ö³ï¿½Ê¼ï¿½ï¿½Ê§ï¿½ï¿½!");
 
 	}
-
+	// test to add comments
 	if ((servSock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0)
 	{
 		int err = WSAGetLastError();

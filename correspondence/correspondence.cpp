@@ -39,6 +39,21 @@ int _tmain(int argc, _TCHAR* argv[])
 		return false;
 	}
 
+	
+	while (1)
+	{
+		char buff[32]={0};
+		sprintf_s(buff, "Client send pack.\n");
+		int length = send(sockClient, buff, strlen(buff), 0);
+		if (length < 0)
+		{
+			return false;
+		}
+
+		Sleep(1000);
+	}
+
+
 	WSACleanup();
 	return 0;
 }

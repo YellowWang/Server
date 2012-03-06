@@ -47,16 +47,21 @@ int _tmain(int argc, _TCHAR* argv[])
 		return false;
 	}
 
+	
+	clentLen = sizeof(echoClentAddr);
+	if ((clentSock = accept(servSock, (sockaddr*)&echoClentAddr, &clentLen)) < 0 )
+	{
+		return false;
+	}
+	
+	printf("Come from client ip=%s port=%d\n", inet_ntoa(echoClentAddr.sin_addr), 
+		echoClentAddr.sin_port);
+
 	for (;;)
 	{
-		clentLen = sizeof(echoClentAddr);
-		if ((clentSock = accept(servSock, (sockaddr*)&echoClentAddr, &clentLen)) < 0 )
-		{
-			return false;
-		}
-
-		printf("Handling client ip=%s port=%d\n", inet_ntoa(echoClentAddr.sin_addr), 
-			echoClentAddr.sin_port);
+		char recvBuff[64]={0};
+		recv(clentSock, recvBuff, 64, 0);
+		printf(recvBuff);
 	}
 
 	WSACleanup();
